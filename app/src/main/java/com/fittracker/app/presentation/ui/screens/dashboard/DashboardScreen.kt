@@ -5,31 +5,30 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
+import androidx.hilt.navigation.compose.hiltViewModel
 import com.fittracker.app.R
 import com.fittracker.app.presentation.ui.components.DashboardCard
 import com.fittracker.app.presentation.ui.components.StepProgressCard
 import com.fittracker.app.presentation.ui.components.WaterProgressCard
 import com.fittracker.app.presentation.ui.components.CalorieProgressCard
+import com.fittracker.app.presentation.viewmodel.DashboardViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun DashboardScreen() {
-    var steps by remember { mutableStateOf(0) }
-    var stepGoal by remember { mutableStateOf(10000) }
-    var waterIntake by remember { mutableStateOf(0) }
-    var waterGoal by remember { mutableStateOf(2000) }
-    var calories by remember { mutableStateOf(0) }
-    var calorieGoal by remember { mutableStateOf(2000) }
+fun DashboardScreen(
+    viewModel: DashboardViewModel = hiltViewModel()
+) {
+    val uiState by viewModel.uiState.collectAsState()
+    val stepGoal = 10000
+    val waterGoal = 2000
+    val calorieGoal = 2000
 
     Scaffold(
         topBar = {
@@ -84,10 +83,10 @@ fun DashboardScreen() {
 
             // عداد الخطوات
             StepProgressCard(
-                steps = steps,
+                steps = uiState.totalSteps,
                 goal = stepGoal,
-                onStepsChanged = { steps = it },
-                onGoalChanged = { stepGoal = it }
+                onStepsChanged = { /* سيتم تحديثه لاحقاً */ },
+                onGoalChanged = { /* سيتم تحديثه لاحقاً */ }
             )
 
             // صف من البطاقات
@@ -97,18 +96,18 @@ fun DashboardScreen() {
             ) {
                 // متتبع الماء
                 WaterProgressCard(
-                    waterIntake = waterIntake,
+                    waterIntake = uiState.waterIntake,
                     goal = waterGoal,
                     modifier = Modifier.weight(1f),
-                    onWaterChanged = { waterIntake = it }
+                    onWaterChanged = { viewModel.updateWaterIntake(it) }
                 )
 
                 // متتبع السعرات
                 CalorieProgressCard(
-                    calories = calories,
+                    calories = uiState.foodCalories,
                     goal = calorieGoal,
                     modifier = Modifier.weight(1f),
-                    onCaloriesChanged = { calories = it }
+                    onCaloriesChanged = { viewModel.updateFoodCalories(it) }
                 )
             }
 
@@ -132,7 +131,7 @@ fun DashboardScreen() {
                     ) {
                         DashboardCard(
                             title = "المسافة",
-                            value = "${(steps * 0.0008).toInt()}",
+                            value = "${uiState.totalDistance.toInt()}",
                             unit = "كم",
                             icon = null,
                             modifier = Modifier.weight(1f)
@@ -140,7 +139,7 @@ fun DashboardScreen() {
                         Spacer(modifier = Modifier.width(8.dp))
                         DashboardCard(
                             title = "الوقت النشط",
-                            value = "${(steps / 100).toInt()}",
+                            value = "${uiState.activeMinutes}",
                             unit = "دقيقة",
                             icon = null,
                             modifier = Modifier.weight(1f)
@@ -191,7 +190,7 @@ fun DashboardScreen() {
                     ) {
                         DashboardCard(
                             title = "البروتين",
-                            value = "0",
+                            value = "${uiState.protein}",
                             unit = "جم",
                             icon = null,
                             modifier = Modifier.weight(1f)
@@ -199,7 +198,7 @@ fun DashboardScreen() {
                         Spacer(modifier = Modifier.width(8.dp))
                         DashboardCard(
                             title = "الكربوهيدرات",
-                            value = "0",
+                            value = "${uiState.carbs}",
                             unit = "جم",
                             icon = null,
                             modifier = Modifier.weight(1f)
@@ -207,7 +206,7 @@ fun DashboardScreen() {
                         Spacer(modifier = Modifier.width(8.dp))
                         DashboardCard(
                             title = "الدهون",
-                            value = "0",
+                            value = "${uiState.fat}",
                             unit = "جم",
                             icon = null,
                             modifier = Modifier.weight(1f)
