@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FitTracker</string>
+    
+    <!-- النصوص العامة -->
+    <string name="ok">موافق</string>
+    <string name="cancel">إلغاء</string>
+    <string name="save">حفظ</string>
+    <string name="delete">حذف</string>
+    <string name="edit">تعديل</string>
+    <string name="add">إضافة</string>
+    <string name="search">بحث</string>
+    <string name="loading">جاري التحميل...</string>
+    <string name="error">خطأ</string>
+    <string name="success">نجح</string>
+    <string name="retry">إعادة المحاولة</string>
+    
+    <!-- شاشة البداية -->
+    <string name="welcome_title">مرحباً بك في FitTracker</string>
+    <string name="welcome_subtitle">تطبيقك الشامل للياقة البدنية والصحة</string>
+    <string name="get_started">ابدأ الآن</string>
+    <string name="skip">تخطى</string>
+    
+    <!-- التنقل -->
+    <string name="nav_dashboard">لوحة التحكم</string>
+    <string name="nav_steps">الخطوات</string>
+    <string name="nav_exercises">التمارين</string>
+    <string name="nav_nutrition">التغذية</string>
+    <string name="nav_profile">الملف الشخصي</string>
+    
+    <!-- عداد الخطوات -->
+    <string name="steps_today">خطوات اليوم</string>
+    <string name="steps_goal">الهدف اليومي</string>
+    <string name="steps_remaining">خطوات متبقية</string>
+    <string name="distance_km">كم</string>
+    <string name="calories_burned">سعرات محروقة</string>
+    <string name="start_tracking">ابدأ التتبع</string>
+    <string name="stop_tracking">أوقف التتبع</string>
+    <string name="step_counter_running">عداد الخطوات يعمل</string>
+    <string name="step_counter_stopped">عداد الخطوات متوقف</string>
+    
+    <!-- التمارين -->
+    <string name="exercises">التمارين</string>
+    <string name="workout_plans">خطط التمارين</string>
+    <string name="exercise_library">مكتبة التمارين</string>
+    <string name="start_workout">ابدأ التمرين</string>
+    <string name="pause_workout">إيقاف مؤقت</string>
+    <string name="resume_workout">استئناف التمرين</string>
+    <string name="end_workout">إنهاء التمرين</string>
+    <string name="workout_duration">مدة التمرين</string>
+    <string name="sets">مجموعات</string>
+    <string name="reps">تكرارات</string>
+    <string name="weight">الوزن</string>
+    <string name="rest_time">وقت الراحة</string>
+    
+    <!-- فئات التمارين -->
+    <string name="cardio">كارديو</string>
+    <string name="strength">قوة</string>
+    <string name="flexibility">مرونة</string>
+    <string name="crossfit">كروسفت</string>
+    <string name="yoga">يوغا</string>
+    
+    <!-- التغذية -->
+    <string name="nutrition">التغذية</string>
+    <string name="food_diary">مذكرة الطعام</string>
+    <string name="calorie_tracker">متتبع السعرات</string>
+    <string name="water_tracker">متتبع الماء</string>
+    <string name="macro_tracker">متتبع الماكروز</string>
+    <string name="add_food">إضافة طعام</string>
+    <string name="scan_barcode">مسح الباركود</string>
+    <string name="search_food">البحث عن طعام</string>
+    <string name="calories">سعرات حرارية</string>
+    <string name="protein">بروتين</string>
+    <string name="carbs">كربوهيدرات</string>
+    <string name="fat">دهون</string>
+    <string name="fiber">ألياف</string>
+    <string name="water_glasses">أكواب ماء</string>
+    <string name="add_water">إضافة ماء</string>
+    
+    <!-- الملف الشخصي -->
+    <string name="profile">الملف الشخصي</string>
+    <string name="personal_info">المعلومات الشخصية</string>
+    <string name="fitness_goals">أهداف اللياقة</string>
+    <string name="settings">الإعدادات</string>
+    <string name="about">حول التطبيق</string>
+    <string name="logout">تسجيل الخروج</string>
+    
+    <!-- الإعدادات -->
+    <string name="notifications">الإشعارات</string>
+    <string name="step_reminders">تذكيرات الخطوات</string>
+    <string name="workout_reminders">تذكيرات التمارين</string>
+    <string name="water_reminders">تذكيرات الماء</string>
+    <string name="dark_mode">الوضع الليلي</string>
+    <string name="language">اللغة</string>
+    <string name="units">الوحدات</string>
+    <string name="metric">متري</string>
+    <string name="imperial">إمبراطوري</string>
+    
+    <!-- الإشعارات -->
+    <string name="notification_channel_steps">عداد الخطوات</string>
+    <string name="notification_channel_workouts">التمارين</string>
+    <string name="notification_channel_nutrition">التغذية</string>
+    <string name="step_goal_achieved">مبروك! لقد حققت هدفك اليومي للخطوات</string>
+    <string name="workout_reminder">حان وقت التمرين!</string>
+    <string name="water_reminder">لا تنس شرب الماء</string>
+    
+    <!-- الأخطاء -->
+    <string name="error_permission_denied">تم رفض الإذن</string>
+    <string name="error_location_permission">مطلوب إذن الموقع لتتبع المسار</string>
+    <string name="error_camera_permission">مطلوب إذن الكاميرا لمسح الباركود</string>
+    <string name="error_network">خطأ في الاتصال بالشبكة</string>
+    <string name="error_database">خطأ في قاعدة البيانات</string>
+    <string name="error_unknown">خطأ غير معروف</string>
+    
+    <!-- الرسائل -->
+    <string name="msg_data_saved">تم حفظ البيانات بنجاح</string>
+    <string name="msg_data_deleted">تم حذف البيانات بنجاح</string>
+    <string name="msg_permission_granted">تم منح الإذن بنجاح</string>
+    <string name="msg_workout_completed">تم إكمال التمرين بنجاح</string>
+    <string name="msg_goal_updated">تم تحديث الهدف بنجاح</string>
+    
+    <!-- الإحصائيات -->
+    <string name="stats_weekly">إحصائيات الأسبوع</string>
+    <string name="stats_monthly">إحصائيات الشهر</string>
+    <string name="stats_yearly">إحصائيات السنة</string>
+    <string name="total_steps">إجمالي الخطوات</string>
+    <string name="total_distance">إجمالي المسافة</string>
+    <string name="total_calories">إجمالي السعرات</string>
+    <string name="total_workouts">إجمالي التمارين</string>
+    <string name="average_steps">متوسط الخطوات</string>
+    <string name="best_day">أفضل يوم</string>
+    
+    <!-- الأهداف -->
+    <string name="daily_goal">الهدف اليومي</string>
+    <string name="weekly_goal">الهدف الأسبوعي</string>
+    <string name="monthly_goal">الهدف الشهري</string>
+    <string name="goal_progress">تقدم الهدف</string>
+    <string name="goal_achieved">تم تحقيق الهدف</string>
+    <string name="goal_not_achieved">لم يتم تحقيق الهدف</string>
+    
+    <!-- الوحدات -->
+    <string name="unit_steps">خطوة</string>
+    <string name="unit_km">كم</string>
+    <string name="unit_miles">ميل</string>
+    <string name="unit_calories">سعرة</string>
+    <string name="unit_kg">كجم</string>
+    <string name="unit_lbs">رطل</string>
+    <string name="unit_cm">سم</string>
+    <string name="unit_inches">بوصة</string>
+    <string name="unit_ml">مل</string>
+    <string name="unit_oz">أونصة</string>
+    
+    <!-- التواريخ والأوقات -->
+    <string name="today">اليوم</string>
+    <string name="yesterday">أمس</string>
+    <string name="this_week">هذا الأسبوع</string>
+    <string name="this_month">هذا الشهر</string>
+    <string name="this_year">هذا العام</string>
+    <string name="minutes">دقائق</string>
+    <string name="hours">ساعات</string>
+    <string name="days">أيام</string>
+    
+    <!-- الألوان -->
+    <string name="color_primary">اللون الأساسي</string>
+    <string name="color_secondary">اللون الثانوي</string>
+    <string name="color_success">اللون الأخضر</string>
+    <string name="color_warning">اللون الأصفر</string>
+    <string name="color_error">اللون الأحمر</string>
+    <string name="color_info">اللون الأزرق</string>
+    
+</resources>
