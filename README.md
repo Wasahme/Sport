@@ -136,7 +136,15 @@ cd fittracker
 - انتظر حتى يكتمل تحميل Gradle
 - تأكد من تثبيت جميع التبعيات
 
-#### 4. بناء APK
+#### 4. إعداد Android SDK
+**مهم**: تأكد من تثبيت Android SDK قبل بناء التطبيق.
+
+إذا واجهت خطأ "SDK location not found":
+1. اتبع تعليمات [إعداد Android SDK](ANDROID_SDK_SETUP.md)
+2. أو ثبت Android Studio من [https://developer.android.com/studio](https://developer.android.com/studio)
+3. أو استخدم Docker (انظر التعليمات أدناه)
+
+#### 5. بناء APK
 ```bash
 # بناء APK للتطوير
 ./gradlew assembleDebug
@@ -148,6 +156,73 @@ cd fittracker
 #### 5. تشغيل التطبيق
 - اربط جهاز أندرويد أو استخدم المحاكي
 - اضغط على زر Run (▶️)
+
+### 🐳 استخدام Docker (بديل)
+
+إذا لم تريد تثبيت Android Studio، يمكنك استخدام Docker:
+
+#### باستخدام Docker Compose (مُوصى)
+```bash
+# بناء APK للتطوير
+docker-compose --profile build up
+
+# بناء APK للإنتاج
+docker-compose --profile release up
+
+# تنظيف الحاويات
+docker-compose down
+```
+
+#### باستخدام Docker مباشرة
+```bash
+# بناء صورة Docker
+docker build -t fittracker-builder .
+
+# بناء APK داخل الحاوية
+docker run -v $(pwd):/workspace fittracker-builder ./gradlew assembleDebug
+
+# نسخ APK من الحاوية
+docker cp $(docker ps -q):/workspace/app/build/outputs/apk/debug/app-debug.apk ./app-debug.apk
+```
+
+### 🛠️ استخدام Makefile (الأسهل)
+
+إذا كان لديك Make مثبت، يمكنك استخدام الأوامر التالية:
+
+```bash
+# عرض جميع الأوامر المتاحة
+make help
+
+# إعداد المشروع (أول مرة فقط)
+make setup
+
+# بناء APK للتطوير
+make build
+
+# بناء APK للإنتاج
+make release
+
+# تشغيل الاختبارات
+make test
+
+# فحص الكود
+make lint
+
+# تثبيت APK على الجهاز المتصل
+make install
+
+# بناء باستخدام Docker
+make docker-build
+
+# عرض معلومات APK
+make apk-info
+
+# سير العمل الكامل للتطوير
+make dev
+
+# سير العمل الكامل للإنتاج
+make prod
+```
 
 ## هيكل المشروع
 

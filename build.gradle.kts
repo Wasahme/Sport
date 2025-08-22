@@ -14,13 +14,7 @@ buildscript {
     }
 }
 
-allprojects {
-    repositories {
-        google()
-        mavenCentral()
-        maven { url = uri("https://jitpack.io") }
-    }
-}
+// allprojects block removed - repositories are now managed in settings.gradle.kts
 
 tasks.register("clean", Delete::class) {
     delete(rootProject.buildDir)
