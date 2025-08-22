@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Health Connect Permissions -->
+    <array name="health_permissions">
+        <item>android.permission.health.READ_STEPS</item>
+        <item>android.permission.health.WRITE_STEPS</item>
+        <item>android.permission.health.READ_HEART_RATE</item>
+        <item>android.permission.health.WRITE_HEART_RATE</item>
+        <item>android.permission.health.READ_DISTANCE</item>
+        <item>android.permission.health.WRITE_DISTANCE</item>
+        <item>android.permission.health.READ_CALORIES_BURNED</item>
+        <item>android.permission.health.WRITE_CALORIES_BURNED</item>
+        <item>android.permission.health.READ_WEIGHT</item>
+        <item>android.permission.health.WRITE_WEIGHT</item>
+        <item>android.permission.health.READ_BLOOD_GLUCOSE</item>
+        <item>android.permission.health.WRITE_BLOOD_GLUCOSE</item>
+        <item>android.permission.health.READ_BLOOD_PRESSURE</item>
+        <item>android.permission.health.WRITE_BLOOD_PRESSURE</item>
+        <item>android.permission.health.READ_SLEEP</item>
+        <item>android.permission.health.WRITE_SLEEP</item>
+    </array>
+    
+    <!-- Exercise Categories -->
+    <array name="exercise_categories">
+        <item>كارديو</item>
+        <item>قوة</item>
+        <item>مرونة</item>
+        <item>كروسفت</item>
+        <item>يوغا</item>
+        <item>بيلاتس</item>
+        <item>رياضات</item>
+        <item>تمارين وظيفية</item>
+    </array>
+    
+    <!-- Exercise Difficulties -->
+    <array name="exercise_difficulties">
+        <item>مبتدئ</item>
+        <item>متوسط</item>
+        <item>متقدم</item>
+        <item>خبير</item>
+    </array>
+    
+    <!-- Food Categories -->
+    <array name="food_categories">
+        <item>فطور</item>
+        <item>غداء</item>
+        <item>عشاء</item>
+        <item>وجبات خفيفة</item>
+        <item>مشروبات</item>
+        <item>فواكه</item>
+        <item>خضروات</item>
+        <item>بروتين</item>
+        <item>حبوب</item>
+        <item>ألبان</item>
+        <item>مكسرات</item>
+        <item>حلويات</item>
+        <item>وجبات سريعة</item>
+        <item>مكملات</item>
+    </array>
+    
+    <!-- Meal Types -->
+    <array name="meal_types">
+        <item>فطور</item>
+        <item>وجبة خفيفة صباحية</item>
+        <item>غداء</item>
+        <item>وجبة خفيفة بعد الظهر</item>
+        <item>عشاء</item>
+        <item>وجبة خفيفة مسائية</item>
+    </array>
+    
+    <!-- Activity Levels -->
+    <array name="activity_levels">
+        <item>قليل النشاط</item>
+        <item>نشاط خفيف</item>
+        <item>نشاط معتدل</item>
+        <item>نشط</item>
+        <item>نشط جداً</item>
+    </array>
+    
+    <!-- Fitness Goals -->
+    <array name="fitness_goals">
+        <item>فقدان الوزن</item>
+        <item>زيادة الوزن</item>
+        <item>بناء العضلات</item>
+        <item>لياقة عامة</item>
+        <item>التحمل</item>
+        <item>القوة</item>
+        <item>المرونة</item>
+    </array>
+    
+    <!-- Units -->
+    <array name="units">
+        <item>متري</item>
+        <item>إمبراطوري</item>
+    </array>
+    
+    <!-- Languages -->
+    <array name="languages">
+        <item>العربية</item>
+        <item>English</item>
+    </array>
+</resources>

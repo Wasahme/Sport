@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- الألوان الأساسية -->
+    <color name="primary">#FF2196F3</color>
+    <color name="primary_dark">#FF1976D2</color>
+    <color name="primary_light">#FFBBDEFB</color>
+    <color name="accent">#FFFF5722</color>
+    
+    <!-- ألوان الخلفية -->
+    <color name="background">#FFFFFFFF</color>
+    <color name="background_dark">#FF121212</color>
+    <color name="surface">#FFFFFFFF</color>
+    <color name="surface_dark">#FF1E1E1E</color>
+    
+    <!-- ألوان النصوص -->
+    <color name="text_primary">#DE000000</color>
+    <color name="text_primary_dark">#DEFFFFFF</color>
+    <color name="text_secondary">#99000000</color>
+    <color name="text_secondary_dark">#99FFFFFF</color>
+    <color name="text_hint">#61000000</color>
+    <color name="text_hint_dark">#61FFFFFF</color>
+    
+    <!-- ألوان الحالة -->
+    <color name="success">#FF4CAF50</color>
+    <color name="success_light">#FFC8E6C9</color>
+    <color name="warning">#FFFF9800</color>
+    <color name="warning_light">#FFFFE0B2</color>
+    <color name="error">#FFF44336</color>
+    <color name="error_light">#FFFFCDD2</color>
+    <color name="info">#FF2196F3</color>
+    <color name="info_light">#FFBBDEFB</color>
+    
+    <!-- ألوان اللياقة البدنية -->
+    <color name="fitness_primary">#FF00BCD4</color>
+    <color name="fitness_secondary">#FF009688</color>
+    <color name="fitness_accent">#FFFF5722</color>
+    
+    <!-- ألوان الخطوات -->
+    <color name="steps_primary">#FF4CAF50</color>
+    <color name="steps_secondary">#FF8BC34A</color>
+    <color name="steps_accent">#FFCDDC39</color>
+    
+    <!-- ألوان التمارين -->
+    <color name="exercise_primary">#FFFF5722</color>
+    <color name="exercise_secondary">#FFFF7043</color>
+    <color name="exercise_accent">#FFFFAB40</color>
+    
+    <!-- ألوان التغذية -->
+    <color name="nutrition_primary">#FF9C27B0</color>
+    <color name="nutrition_secondary">#FFBA68C8</color>
+    <color name="nutrition_accent">#FFE1BEE7</color>
+    
+    <!-- ألوان الماء -->
+    <color name="water_primary">#FF2196F3</color>
+    <color name="water_secondary">#FF64B5F6</color>
+    <color name="water_accent">#FFBBDEFB</color>
+    
+    <!-- ألوان الكارديو -->
+    <color name="cardio_primary">#FFE91E63</color>
+    <color name="cardio_secondary">#FFF48FB1</color>
+    <color name="cardio_accent">#FFFCE4EC</color>
+    
+    <!-- ألوان القوة -->
+    <color name="strength_primary">#FF795548</color>
+    <color name="strength_secondary">#FFBCAAA4</color>
+    <color name="strength_accent">#FFEFEBE9</color>
+    
+    <!-- ألوان المرونة -->
+    <color name="flexibility_primary">#FF9C27B0</color>
+    <color name="flexibility_secondary">#FFCE93D8</color>
+    <color name="flexibility_accent">#FFF3E5F5</color>
+    
+    <!-- ألوان الكروسفت -->
+    <color name="crossfit_primary">#FF607D8B</color>
+    <color name="crossfit_secondary">#FF90A4AE</color>
+    <color name="crossfit_accent">#FFECEFF1</color>
+    
+    <!-- ألوان اليوغا -->
+    <color name="yoga_primary">#FF8BC34A</color>
+    <color name="yoga_secondary">#FFAED581</color>
+    <color name="yoga_accent">#FFF1F8E9</color>
+    
+    <!-- ألوان الماكروز -->
+    <color name="protein_color">#FF4CAF50</color>
+    <color name="carbs_color">#FFFF9800</color>
+    <color name="fat_color">#FFF44336</color>
+    <color name="fiber_color">#FF9C27B0</color>
+    
+    <!-- ألوان الشفافية -->
+    <color name="transparent">#00000000</color>
+    <color name="semi_transparent">#80000000</color>
+    <color name="semi_transparent_white">#80FFFFFF</color>
+    
+    <!-- ألوان الحدود -->
+    <color name="border_light">#FFE0E0E0</color>
+    <color name="border_dark">#FF424242</color>
+    <color name="divider">#FFBDBDBD</color>
+    <color name="divider_dark">#FF616161</color>
+    
+    <!-- ألوان الظلال -->
+    <color name="shadow_light">#1A000000</color>
+    <color name="shadow_medium">#33000000</color>
+    <color name="shadow_dark">#4D000000</color>
+    
+    <!-- ألوان التدرج -->
+    <color name="gradient_start">#FF2196F3</color>
+    <color name="gradient_end">#FF00BCD4</color>
+    <color name="gradient_fitness_start">#FF4CAF50</color>
+    <color name="gradient_fitness_end">#FF8BC34A</color>
+    
+    <!-- ألوان الشارات -->
+    <color name="badge_bronze">#FFCD7F32</color>
+    <color name="badge_silver">#FFC0C0C0</color>
+    <color name="badge_gold">#FFFFD700</color>
+    <color name="badge_platinum">#FFE5E4E2</color>
+    
+    <!-- ألوان الحالة الصحية -->
+    <color name="health_excellent">#FF4CAF50</color>
+    <color name="health_good">#FF8BC34A</color>
+    <color name="health_fair">#FFFF9800</color>
+    <color name="health_poor">#FFF44336</color>
+    
+    <!-- ألوان مؤشرات الأداء -->
+    <color name="progress_low">#FFF44336</color>
+    <color name="progress_medium">#FFFF9800</color>
+    <color name="progress_high">#FF4CAF50</color>
+    <color name="progress_excellent">#FF00BCD4</color>
+    
+</resources>

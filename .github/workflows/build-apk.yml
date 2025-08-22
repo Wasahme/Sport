@@ -1,0 +1,93 @@
+name: Build APK
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+  release:
+    types: [ published ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        
+    - name: Cache Gradle packages
+      uses: actions/cache@v3
+      with:
+        path: |
+          ~/.gradle/caches
+          ~/.gradle/wrapper
+        key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+        restore-keys: |
+          ${{ runner.os }}-gradle-
+          
+    - name: Grant execute permission for gradlew
+      run: chmod +x gradlew
+      
+    - name: Build Debug APK
+      run: ./gradlew assembleDebug
+      
+    - name: Build Release APK
+      run: ./gradlew assembleRelease
+      
+    - name: Upload Debug APK
+      uses: actions/upload-artifact@v4
+      with:
+        name: app-debug
+        path: app/build/outputs/apk/debug/app-debug.apk
+        
+    - name: Upload Release APK
+      uses: actions/upload-artifact@v4
+      with:
+        name: app-release
+        path: app/build/outputs/apk/release/app-release.apk
+        
+    - name: Create Release
+      if: github.event_name == 'release'
+      uses: softprops/action-gh-release@v1
+      with:
+        files: |
+          app/build/outputs/apk/release/app-release.apk
+        body: |
+          ## FitTracker v${{ github.event.release.tag_name }}
+          
+          ### 📱 تطبيق متتبع اللياقة البدنية
+          
+          **الميزات الجديدة:**
+          - ✅ عداد الخطوات المتقدم
+          - ✅ متتبع التغذية والماء
+          - ✅ مكتبة التمارين الشاملة
+          - ✅ واجهة عربية كاملة
+          - ✅ دعم الوضع الليلي
+          
+          **التحسينات:**
+          - تحسين الأداء والاستقرار
+          - إصلاح الأخطاء المعروفة
+          - تحديث قاعدة البيانات
+          
+          **متطلبات النظام:**
+          - Android 7.0+ (API 24+)
+          - 2GB RAM (مُوصى 4GB)
+          - 100MB مساحة تخزين
+          
+          **التثبيت:**
+          1. قم بتحميل ملف APK
+          2. فعّل "التثبيت من مصادر غير معروفة"
+          3. قم بتثبيت التطبيق
+          4. استمتع بتتبع لياقتك!
+          
+          ---
+          *تم تطوير هذا التطبيق باستخدام Kotlin و Jetpack Compose*
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

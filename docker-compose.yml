@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  fittracker-builder:
+    build: .
+    volumes:
+      - .:/workspace
+      - gradle-cache:/root/.gradle
+    environment:
+      - ANDROID_HOME=/opt/android-sdk
+    command: ./gradlew assembleDebug
+    profiles:
+      - build
+
+  fittracker-release:
+    build: .
+    volumes:
+      - .:/workspace
+      - gradle-cache:/root/.gradle
+    environment:
+      - ANDROID_HOME=/opt/android-sdk
+    command: ./gradlew assembleRelease
+    profiles:
+      - release
+
+volumes:
+  gradle-cache:
