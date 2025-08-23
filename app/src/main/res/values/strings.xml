@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">طبيب دواء ذكي</string>
+    
+    <!-- Main Activity -->
+    <string name="welcome_message">مرحباً بك في طبيب دواء ذكي</string>
+    <string name="add_prescription">إضافة وصفة جديدة</string>
+    <string name="my_prescriptions">وصفاتي</string>
+    <string name="medicine_reminders">تذكيرات الأدوية</string>
+    <string name="settings">الإعدادات</string>
+    <string name="prescriptions_count">%d وصفة</string>
+    <string name="active_reminders">%d تذكير نشط</string>
+    
+    <!-- Camera Activity -->
+    <string name="camera_title">التقاط الوصفة</string>
+    <string name="take_photo">التقاط صورة</string>
+    <string name="choose_from_gallery">اختيار من المعرض</string>
+    <string name="processing_image">معالجة الصورة…</string>
+    <string name="extracting_text">استخراج النص من الصورة…</string>
+    <string name="analyzing_medicines">تحليل الأدوية…</string>
+    <string name="saving_prescription">حفظ الوصفة…</string>
+    <string name="error_processing_image">خطأ في معالجة الصورة</string>
+    <string name="error_extracting_text">خطأ في استخراج النص من الصورة</string>
+    <string name="error_saving_prescription">خطأ في حفظ الوصفة</string>
+    <string name="prescription_saved_successfully">تم حفظ الوصفة بنجاح</string>
+    
+    <!-- Prescription Detail Activity -->
+    <string name="prescription_details">تفاصيل الوصفة</string>
+    <string name="prescription_date">التاريخ: %s</string>
+    <string name="prescription_doctor">الطبيب: %s</string>
+    <string name="prescription_notes">ملاحظات: %s</string>
+    <string name="medicines_list">الأدوية</string>
+    <string name="no_medicines_found">لم يتم العثور على أدوية</string>
+    <string name="delete_prescription">حذف الوصفة</string>
+    <string name="delete_prescription_confirmation">هل أنت متأكد من حذف هذه الوصفة؟</string>
+    <string name="delete">حذف</string>
+    <string name="cancel">إلغاء</string>
+    <string name="prescription_deleted">تم حذف الوصفة</string>
+    
+    <!-- Medicine Detail Activity -->
+    <string name="medicine_details">تفاصيل الدواء</string>
+    <string name="medicine_name">الاسم: %s</string>
+    <string name="medicine_dosage">الجرعة: %s</string>
+    <string name="medicine_frequency">التكرار: %s</string>
+    <string name="medicine_duration">المدة: %s</string>
+    <string name="medicine_instructions">التعليمات: %s</string>
+    <string name="medicine_explanation">الشرح</string>
+    <string name="medicine_interactions">التفاعلات الدوائية</string>
+    <string name="no_interactions_found">لم يتم العثور على تفاعلات معروفة</string>
+    <string name="set_reminder">تعيين تذكير</string>
+    <string name="share_medicine">مشاركة معلومات الدواء</string>
+    <string name="medicine_shared">تم مشاركة معلومات الدواء</string>
+    
+    <!-- Medicine Reminder Activity -->
+    <string name="medicine_reminder_title">تعيين تذكير دواء</string>
+    <string name="reminder_time">وقت التذكير</string>
+    <string name="reminder_days">أيام التذكير</string>
+    <string name="monday">الاثنين</string>
+    <string name="tuesday">الثلاثاء</string>
+    <string name="wednesday">الأربعاء</string>
+    <string name="thursday">الخميس</string>
+    <string name="friday">الجمعة</string>
+    <string name="saturday">السبت</string>
+    <string name="sunday">الأحد</string>
+    <string name="everyday">كل يوم</string>
+    <string name="reminder_sound">صوت التذكير</string>
+    <string name="reminder_vibration">الاهتزاز</string>
+    <string name="reminder_notification">الإشعار</string>
+    <string name="save_reminder">حفظ التذكير</string>
+    <string name="reminder_saved">تم حفظ التذكير بنجاح</string>
+    <string name="error_saving_reminder">خطأ في حفظ التذكير</string>
+    <string name="select_time">اختيار الوقت</string>
+    <string name="select_days">اختيار الأيام</string>
+    
+    <!-- Notifications -->
+    <string name="medicine_reminder_channel_name">تذكيرات الأدوية</string>
+    <string name="medicine_reminder_channel_description">إشعارات لتذكيرات الأدوية</string>
+    <string name="medicine_reminder_title">تذكير دواء</string>
+    <string name="medicine_reminder_text">حان وقت تناول %s - %s</string>
+    <string name="medicine_reminder_sound_text">حان وقت تناول %s، الجرعة: %s</string>
+    
+    <!-- Permissions -->
+    <string name="camera_permission_required">مطلوب إذن الكاميرا لالتقاط الصور</string>
+    <string name="storage_permission_required">مطلوب إذن التخزين للوصول للصور</string>
+    <string name="notification_permission_required">مطلوب إذن الإشعارات للتذكيرات</string>
+    <string name="permission_denied">تم رفض الإذن</string>
+    <string name="permission_granted">تم منح الإذن</string>
+    
+    <!-- Errors -->
+    <string name="error_occurred">حدث خطأ</string>
+    <string name="try_again">حاول مرة أخرى</string>
+    <string name="ok">موافق</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    
+    <!-- AI Explanations -->
+    <string name="medicine_explanation_placeholder">هذا الدواء يستخدم لعلاج حالات مختلفة. يرجى استشارة طبيبك للحصول على معلومات محددة حول هذا الدواء.</string>
+    <string name="interaction_warning">تحذير: قد يتفاعل هذا الدواء مع أدوية أخرى. يرجى استشارة طبيبك.</string>
+    <string name="no_interactions">لا توجد تفاعلات معروفة مع أدوية أخرى.</string>
+    
+    <!-- Settings -->
+    <string name="language">اللغة</string>
+    <string name="arabic">العربية</string>
+    <string name="french">الفرنسية</string>
+    <string name="english">الإنجليزية</string>
+    <string name="theme">المظهر</string>
+    <string name="light_theme">فاتح</string>
+    <string name="dark_theme">داكن</string>
+    <string name="auto_theme">تلقائي</string>
+    <string name="notifications">الإشعارات</string>
+    <string name="sound_enabled">تفعيل الصوت</string>
+    <string name="vibration_enabled">تفعيل الاهتزاز</string>
+    <string name="about">حول التطبيق</string>
+    <string name="version">الإصدار %s</string>
+    <string name="privacy_policy">سياسة الخصوصية</string>
+    <string name="terms_of_service">شروط الخدمة</string>
+    
+    <!-- Common -->
+    <string name="loading">جاري التحميل…</string>
+    <string name="saving">جاري الحفظ…</string>
+    <string name="deleting">جاري الحذف…</string>
+    <string name="search">بحث</string>
+    <string name="filter">تصفية</string>
+    <string name="sort">ترتيب</string>
+    <string name="edit">تعديل</string>
+    <string name="save">حفظ</string>
+    <string name="back">رجوع</string>
+    <string name="next">التالي</string>
+    <string name="finish">إنهاء</string>
+    <string name="close">إغلاق</string>
+    <string name="open">فتح</string>
+    <string name="copy">نسخ</string>
+    <string name="paste">لصق</string>
+    <string name="cut">قص</string>
+    <string name="select_all">تحديد الكل</string>
+    <string name="clear">مسح</string>
+    <string name="refresh">تحديث</string>
+    <string name="retry">إعادة المحاولة</string>
+    <string name="help">مساعدة</string>
+    <string name="info">معلومات</string>
+    <string name="warning">تحذير</string>
+    <string name="error">خطأ</string>
+    <string name="success">نجح</string>
+</resources>
