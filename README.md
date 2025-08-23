@@ -72,7 +72,19 @@
 - JDK 11 أو أحدث
 - Android SDK API 34
 
-### خطوات البناء
+### تثبيت Android SDK
+
+#### الطريقة الأولى: تثبيت Android Studio
+1. قم بتحميل Android Studio من [الموقع الرسمي](https://developer.android.com/studio)
+2. قم بتثبيت Android Studio
+3. عند فتح Android Studio لأول مرة، سيتم تثبيت Android SDK تلقائياً
+
+#### الطريقة الثانية: تثبيت Android SDK فقط (للمطورين المتقدمين)
+1. قم بتحميل Android SDK من [الموقع الرسمي](https://developer.android.com/studio#command-tools)
+2. استخرج الملف في مجلد مناسب
+3. أضف مسار SDK إلى متغير البيئة ANDROID_HOME
+
+### إعداد المشروع
 
 1. **استنساخ المشروع**
 ```bash
@@ -80,25 +92,55 @@ git clone https://github.com/yourusername/smart-medicine-doctor.git
 cd smart-medicine-doctor
 ```
 
-2. **فتح المشروع في Android Studio**
-```bash
-# أو فتح Android Studio واختيار "Open an existing project"
-```
+2. **تحديث مسار Android SDK**
+   - افتح ملف `local.properties`
+   - قم بتحديث `sdk.dir` بمسار Android SDK الخاص بك:
+   
+   **Windows:**
+   ```
+   sdk.dir=C\:\\Users\\YourUsername\\AppData\\Local\\Android\\Sdk
+   ```
+   
+   **macOS:**
+   ```
+   sdk.dir=/Users/YourUsername/Library/Android/sdk
+   ```
+   
+   **Linux:**
+   ```
+   sdk.dir=/home/YourUsername/Android/Sdk
+   ```
 
-3. **مزامنة Gradle**
+3. **فتح المشروع في Android Studio**
+   - افتح Android Studio
+   - اختر "Open an existing project"
+   - اختر مجلد المشروع
+
+4. **مزامنة Gradle**
 ```bash
 ./gradlew build
 ```
 
-4. **بناء التطبيق**
+5. **بناء التطبيق**
 ```bash
 ./gradlew assembleDebug
 ```
 
-5. **تثبيت على الجهاز**
+6. **تثبيت على الجهاز**
 ```bash
 ./gradlew installDebug
 ```
+
+### حل المشاكل الشائعة
+
+#### مشكلة: "SDK location not found"
+**الحل:** تأكد من تحديث مسار Android SDK في ملف `local.properties`
+
+#### مشكلة: "Gradle wrapper not found"
+**الحل:** تأكد من وجود ملف `gradle-wrapper.jar` في مجلد `gradle/wrapper/`
+
+#### مشكلة: "Plugin not found"
+**الحل:** تأكد من وجود اتصال بالإنترنت لتحميل المكتبات
 
 ## 📁 هيكل المشروع
 
@@ -202,6 +244,11 @@ app/
 - **التحميلات**: [سيتم إضافة الإحصائيات]
 - **التقييم**: [سيتم إضافة التقييم]
 - **المساهمون**: [سيتم إضافة المساهمين]
+
+## 📚 الوثائق باللغات الأخرى
+
+- **[English](README_EN.md)** - English documentation
+- **[Français](README_FR.md)** - Documentation en français
 
 ---
 

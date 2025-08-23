@@ -182,3 +182,12 @@ app/src/main/java/com/smartmedicinedoctor/app/databinding/
 
 # View binding
 app/src/main/java/com/smartmedicinedoctor/app/viewbinding/
+
+# Setup scripts (keep them in repo but ignore execution logs)
+setup.log
+setup_*.log
+
+# IDE specific files
+.vscode/settings.json
+.idea/workspace.xml
+.idea/tasks.xml
