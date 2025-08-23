@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Médecin Médicament Intelligent</string>
+    
+    <!-- Main Activity -->
+    <string name="welcome_message">Bienvenue dans Médecin Médicament Intelligent</string>
+    <string name="add_prescription">Ajouter une nouvelle ordonnance</string>
+    <string name="my_prescriptions">Mes ordonnances</string>
+    <string name="medicine_reminders">Rappels de médicaments</string>
+    <string name="settings">Paramètres</string>
+    <string name="prescriptions_count">%d Ordonnances</string>
+    <string name="active_reminders">%d Rappels actifs</string>
+    
+    <!-- Camera Activity -->
+    <string name="camera_title">Capturer l\'ordonnance</string>
+    <string name="take_photo">Prendre une photo</string>
+    <string name="choose_from_gallery">Choisir depuis la galerie</string>
+    <string name="processing_image">Traitement de l\'image…</string>
+    <string name="extracting_text">Extraction du texte de l\'image…</string>
+    <string name="analyzing_medicines">Analyse des médicaments…</string>
+    <string name="saving_prescription">Sauvegarde de l\'ordonnance…</string>
+    <string name="error_processing_image">Erreur lors du traitement de l\'image</string>
+    <string name="error_extracting_text">Erreur lors de l\'extraction du texte</string>
+    <string name="error_saving_prescription">Erreur lors de la sauvegarde de l\'ordonnance</string>
+    <string name="prescription_saved_successfully">Ordonnance sauvegardée avec succès</string>
+    
+    <!-- Prescription Detail Activity -->
+    <string name="prescription_details">Détails de l\'ordonnance</string>
+    <string name="prescription_date">Date : %s</string>
+    <string name="prescription_doctor">Médecin : %s</string>
+    <string name="prescription_notes">Notes : %s</string>
+    <string name="medicines_list">Médicaments</string>
+    <string name="no_medicines_found">Aucun médicament trouvé</string>
+    <string name="delete_prescription">Supprimer l\'ordonnance</string>
+    <string name="delete_prescription_confirmation">Êtes-vous sûr de vouloir supprimer cette ordonnance ?</string>
+    <string name="delete">Supprimer</string>
+    <string name="cancel">Annuler</string>
+    <string name="prescription_deleted">Ordonnance supprimée</string>
+    
+    <!-- Medicine Detail Activity -->
+    <string name="medicine_details">Détails du médicament</string>
+    <string name="medicine_name">Nom : %s</string>
+    <string name="medicine_dosage">Dosage : %s</string>
+    <string name="medicine_frequency">Fréquence : %s</string>
+    <string name="medicine_duration">Durée : %s</string>
+    <string name="medicine_instructions">Instructions : %s</string>
+    <string name="medicine_explanation">Explication</string>
+    <string name="medicine_interactions">Interactions médicamenteuses</string>
+    <string name="no_interactions_found">Aucune interaction connue trouvée</string>
+    <string name="set_reminder">Définir un rappel</string>
+    <string name="share_medicine">Partager les informations du médicament</string>
+    <string name="medicine_shared">Informations du médicament partagées</string>
+    
+    <!-- Medicine Reminder Activity -->
+    <string name="medicine_reminder_title">Définir un rappel de médicament</string>
+    <string name="reminder_time">Heure du rappel</string>
+    <string name="reminder_days">Jours de rappel</string>
+    <string name="monday">Lundi</string>
+    <string name="tuesday">Mardi</string>
+    <string name="wednesday">Mercredi</string>
+    <string name="thursday">Jeudi</string>
+    <string name="friday">Vendredi</string>
+    <string name="saturday">Samedi</string>
+    <string name="sunday">Dimanche</string>
+    <string name="everyday">Tous les jours</string>
+    <string name="reminder_sound">Son de rappel</string>
+    <string name="reminder_vibration">Vibration</string>
+    <string name="reminder_notification">Notification</string>
+    <string name="save_reminder">Sauvegarder le rappel</string>
+    <string name="reminder_saved">Rappel sauvegardé avec succès</string>
+    <string name="error_saving_reminder">Erreur lors de la sauvegarde du rappel</string>
+    <string name="select_time">Sélectionner l\'heure</string>
+    <string name="select_days">Sélectionner les jours</string>
+    
+    <!-- Notifications -->
+    <string name="medicine_reminder_channel_name">Rappels de médicaments</string>
+    <string name="medicine_reminder_channel_description">Notifications pour les rappels de médicaments</string>
+    <string name="medicine_reminder_title">Rappel de médicament</string>
+    <string name="medicine_reminder_text">Il est temps de prendre %s - %s</string>
+    <string name="medicine_reminder_sound_text">Il est temps de prendre %s, dosage : %s</string>
+    
+    <!-- Permissions -->
+    <string name="camera_permission_required">L\'autorisation de caméra est requise pour prendre des photos</string>
+    <string name="storage_permission_required">L\'autorisation de stockage est requise pour accéder aux images</string>
+    <string name="notification_permission_required">L\'autorisation de notification est requise pour les rappels</string>
+    <string name="permission_denied">Permission refusée</string>
+    <string name="permission_granted">Permission accordée</string>
+    
+    <!-- Errors -->
+    <string name="error_occurred">Une erreur s\'est produite</string>
+    <string name="try_again">Réessayer</string>
+    <string name="ok">OK</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    
+    <!-- AI Explanations -->
+    <string name="medicine_explanation_placeholder">Ce médicament est utilisé pour traiter diverses conditions. Veuillez consulter votre médecin pour des informations spécifiques sur ce médicament.</string>
+    <string name="interaction_warning">Attention : Ce médicament peut interagir avec d\'autres médicaments. Veuillez consulter votre médecin.</string>
+    <string name="no_interactions">Aucune interaction connue avec d\'autres médicaments.</string>
+    
+    <!-- Settings -->
+    <string name="language">Langue</string>
+    <string name="arabic">Arabe</string>
+    <string name="french">Français</string>
+    <string name="english">Anglais</string>
+    <string name="theme">Thème</string>
+    <string name="light_theme">Clair</string>
+    <string name="dark_theme">Sombre</string>
+    <string name="auto_theme">Auto</string>
+    <string name="notifications">Notifications</string>
+    <string name="sound_enabled">Son activé</string>
+    <string name="vibration_enabled">Vibration activée</string>
+    <string name="about">À propos</string>
+    <string name="version">Version %s</string>
+    <string name="privacy_policy">Politique de confidentialité</string>
+    <string name="terms_of_service">Conditions d\'utilisation</string>
+    
+    <!-- Common -->
+    <string name="loading">Chargement…</string>
+    <string name="saving">Sauvegarde…</string>
+    <string name="deleting">Suppression…</string>
+    <string name="search">Rechercher</string>
+    <string name="filter">Filtrer</string>
+    <string name="sort">Trier</string>
+    <string name="edit">Modifier</string>
+    <string name="save">Sauvegarder</string>
+    <string name="back">Retour</string>
+    <string name="next">Suivant</string>
+    <string name="finish">Terminer</string>
+    <string name="close">Fermer</string>
+    <string name="open">Ouvrir</string>
+    <string name="copy">Copier</string>
+    <string name="paste">Coller</string>
+    <string name="cut">Couper</string>
+    <string name="select_all">Tout sélectionner</string>
+    <string name="clear">Effacer</string>
+    <string name="refresh">Actualiser</string>
+    <string name="retry">Réessayer</string>
+    <string name="help">Aide</string>
+    <string name="info">Info</string>
+    <string name="warning">Attention</string>
+    <string name="error">Erreur</string>
+    <string name="success">Succès</string>
+</resources>
